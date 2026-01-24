@@ -1,9 +1,23 @@
-import { Button } from '@/components/ui/button';
+import {
+ Categories,
+ Container,
+ SortPopup,
+ Title,
+ TopBar,
+} from '@/components/ui/shared';
 
 export default function Home() {
  return (
-  <div>
-   <h1>Главная</h1>
-  </div>
+  <>
+   {' '}
+   <Container className="mt-10">
+    <Title
+     text="Все пиццы"
+     size="lg"
+     className="font-extrabold"
+    />
+   </Container>
+   <TopBar />
+  </>
  );
 }
