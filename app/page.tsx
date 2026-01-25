@@ -1,6 +1,7 @@
 import {
  Categories,
  Container,
+ Filters,
  SortPopup,
  Title,
  TopBar,
@@ -18,6 +19,17 @@ export default function Home() {
     />
    </Container>
    <TopBar />
+   <Container className="mt-10 pb-14">
+    <div className="flex gap-15">
+     {/* Фильтрация */}
+
+     <Filters />
+     <div className="flex-1">
+      <div className="flex flex-col gap-16">Список товаров</div>
+     </div>
+    </div>
+    {/* Список товаров */}
+   </Container>
   </>
  );
 }
